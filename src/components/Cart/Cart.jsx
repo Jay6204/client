@@ -44,7 +44,7 @@ const Cart = ({ setShowCart }) => {
                 {!cartItems?.length && <div className="empty-cart">
                     <BsCartX />
                     <span>No products in the cart.</span>
-                    <button className="return-cta">RETURN TO SHOP</button>
+                    <button className="return-cta" onClick={()=>setShowCart(false)}>RETURN TO SHOP</button>
                 </div>}
                 {!!cartItems?.length && (
                 <>
